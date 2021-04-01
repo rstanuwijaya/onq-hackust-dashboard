@@ -105,7 +105,7 @@ export default function Dashboard() {
         </GridItem>
         <GridItem xs={12} sm={12} md={3}>
           <Card chart>
-            <CardHeader color="gray" style={{padding:"140px"}}>
+            <CardHeader color="gray" style={{padding:"140px 0px"}}>
             </CardHeader>
             <CardBody>
               <h4 className={classes.cardTitle}>QR Code</h4>
