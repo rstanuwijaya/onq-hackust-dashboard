@@ -64,26 +64,20 @@ function QueueCard(props) {
               Estimated time:
           </div>
         </CardFooter>
+        <GridContainer>
+        <GridItem xs={12} sm={6} md={6}>
+          <div style={{textAlign:"-webkit-center", margin:"5px 0px 5px 15px"}}>
+            <Button style={{width:"100%", padding:"30px 30px ", textAlign:"center", fontSize:"20px"}}>Add</Button>
+          </div>
+        </GridItem>
+        <GridItem xs={12} sm={6} md={6}>
+          <div style={{textAlign:"-webkit-center", margin:"5px 15px 5px 0px"}}>
+            <Button style={{width:"100%", padding:"30px 30px ", textAlign:"center", fontSize:"20px"}}>Pop</Button>
+          </div>
+        </GridItem>
+      </GridContainer>
       </Card>
     </div>
-  );
-}
-
-function AddPop() {
-  const classes = useStyles();
-  return(
-    <GridContainer>
-      <GridItem xs={12} sm={6} md={6}>
-        <div style={{textAlign:"-webkit-center"}}>
-          <Button style={{width:"100%", padding:"30px 30px ", textAlign:"center", fontSize:"20px"}}>Add</Button>
-        </div>
-      </GridItem>
-      <GridItem xs={12} sm={6} md={6}>
-        <div style={{textAlign:"-webkit-center"}}>
-          <Button style={{width:"100%", padding:"30px 30px ", textAlign:"center", fontSize:"20px"}}>Pop</Button>
-        </div>
-      </GridItem>
-    </GridContainer>
   );
 }
 
@@ -141,7 +135,7 @@ export default function Dashboard() {
           <QueueCard name="Queue D (8+)" label="D" color="danger"></QueueCard>
         </GridItem>
       </GridContainer>
-      <GridContainer>
+      {/* <GridContainer>
         <GridItem xs={12} sm={6} md={3}>
           <AddPop />
         </GridItem>
@@ -154,8 +148,8 @@ export default function Dashboard() {
         <GridItem xs={12} sm={6} md={3}>
           <AddPop />
         </GridItem>
-      </GridContainer>
-      <GridContainer>
+      </GridContainer> */}
+      <GridContainer style={{paddingTop:"20px"}}>
         <GridItem xs={12} sm={12} md>
         </GridItem>
         <GridItem xs={12} sm={12} md={8}>

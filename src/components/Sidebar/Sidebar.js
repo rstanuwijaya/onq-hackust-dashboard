@@ -59,7 +59,7 @@ export default function Sidebar(props) {
                 return("_blank");
               }
               else {
-                return(prop.layout + prop.path);
+                return(null);
               }
             }}
 
@@ -162,7 +162,7 @@ export default function Sidebar(props) {
           {image !== undefined ? (
             <div
               className={classes.background}
-              style={{ backgroundImage: "url(" + image + ")" }}
+              style={{background:"linear-gradient(150deg, #460075 15%, #8f6ed5 70%, #d782d9 94%)"}}
             />
           ) : null}
         </Drawer>
